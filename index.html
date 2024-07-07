@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminders</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h1>Reminders</h1>
+    <table id="expenseTable">
+        <thead>
+            <tr>
+                <th>Sr. No</th>
+                <th>Reminder</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be added dynamically here -->
+        </tbody>
+    </table>
+    <div class="add-transaction-button">
+        <button id="addTransaction">Add Reminder</button>
+    </div>
+
+    <div id="popup" class="top-popup">
+        <button id="dismiss-btn" class="dismiss-button">&times;</button>
+        <div class="popup-content">
+            <p>Use this page to view and edit your reminders.</p>
+        </div>
+    </div>
+    
+    <!-- Add this button at the bottom of your HTML body -->
+    <button id="logoutButton">Logout</button>
+    <script src="script.js"></script>
+
+    <div class="dropdown">
+        <button class="dropbtn">Pages</button>
+        <div class="dropdown-content">
+            <a href="../finance/index.html">Finance</a>
+            <a href="../reminder/index.html">Reminder</a>
+        </div>
+    </div>
+</body>
+</html>
